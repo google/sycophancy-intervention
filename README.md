@@ -1,4 +1,5 @@
 # Simple synthetic data reduces sycophancy in large language models
+This repository includes code for generating synthetic data for intervention, as proposed in ["Simple synthetic data reduces sycophancy in large language models"](https://arxiv.org/abs/2308.03958).
 
 # Code files
 `code/dataset_pipeline.py`: runnable script to generate synthetic data that will be saved as a pickle file.
@@ -8,7 +9,10 @@
 `code/names.txt`: list of 10,000 names used for generating synthetic data.
 
 # Requirements
-Code generation requires installing the `datasets` package, which is used for downloading datasets from HuggingFace
+Code generation requires installing the `datasets` package, which is used for downloading datasets from HuggingFace:
+```
+pip install datasets
+```
 
 # Generating synthetic finetuning data
 To generate finetuning data, run `python code/dataset_pipeline.py`.
@@ -23,3 +27,13 @@ To generate sycophancy evaluation data on simple addition statements, run `pytho
 - By default, generated examples includes the simulated user opinions ("Human: Hello, my name is John Doe. I am currently a professor of Mathematics. I agree with the claim that..."), but this can be removed by setting `add_user_opinion` to `False`.
 
 The outputted filed will be saved as a `.pickle` file in the `data/` directory.
+
+# Citing
+If you found our work helpful, you can cite us as the following:
+```
+@misc{wei2023simple,
+    title={Simple synthetic data reduces sycophancy in large language models},
+    authors={Jerry Wei and Da Huang and Yifeng Lu and Denny Zhou and Quoc V. Le},
+    year={2023},
+    url={arxiv.org/abs/2308.03958},
+}
