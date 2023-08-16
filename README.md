@@ -4,12 +4,12 @@ This repository includes code for generating synthetic data for intervention, as
 # Code files
 `code/dataset_pipeline.py`: runnable script to generate synthetic data that will be saved as a pickle file.
 `code/generate_data.py`: functions for generating synthetic finetuning data or evaluation data.
-`code/pull_from_huggingface.py`: compiles NLP datasets from HuggingFace as specified in the paper.
+`code/pull_from_huggingface.py`: compiles NLP datasets from Hugging Face as specified in the paper.
 `code/utils.py` : utility functions used by this repository.
 `code/names.txt`: list of 10,000 names used for generating synthetic data.
 
 # Requirements
-Code generation requires installing the `datasets` package, which is used for downloading datasets from HuggingFace:
+Code generation requires installing the `datasets` package, which is used for downloading datasets from Hugging Face:
 ```
 pip install datasets
 ```
